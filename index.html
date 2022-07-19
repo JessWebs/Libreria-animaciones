@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varios CSS y JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/sitio-web.png" alt="La web" height="64">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="#mediaqueries">Mediaqueries</a>
+                        <a class="nav-link" href="#turn">Turn.js</a>
+                        <a class="nav-link" href="#animate">Animate.css</a>
+                        <a class="nav-link" href="#wow">Wow.js</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="front">
+            <img src="img/undraw_online_resume_re_ru7s.svg" alt="Desarrolador web">
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-12">
+            <h1 class="wow text-center animate__animated animate__bounceInDown animate__delay-1s">Varios CSS y JS</h1>
+            <h2 class="wow text-center animate__animated animate__bounceInUp animate__delay-1s">Animaciones</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 content">
+            <h3 id="mediaqueries">Media queries</h3>
+            <p>Las media queries que, traducido al español, significa "consulta de medios" son breakpoints (puntos de
+                quiebre) utilizados cuando se quiere modificar la disposición del contenido web en función del tipo de
+                dispositivo.</p>
+            <p>Por ejemplo: Si visualizas está página web desde un teléfono celular, la paleta de colores y la
+                distribución del contenido será diferente a lo que verías si realizaras la consulta desde una
+                computadora.</p>
+            <p>Esta y otras modificaciones específicas se logran gracias a las media queries.</p>
+            <p></p>
+        </div>
+        <div class="col-md-6 img">
+            <img src="img/undraw_responsive_re_e1nn.svg" alt="Diseño responsive" width="400" height="400"
+                class="wow animate__animated animate__bounceInRight  animate__delay-1s">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md 6 img">
+            <img src="img/undraw_book_lover_re_rwjy.svg" alt="Libro" width="400" height="400"
+                class="wow animate__animated animate__bounceInLeft  animate__delay-1s">
+        </div>
+        <div class=" col-md 6 content">
+            <h3 id="turn">Turn JS</h3>
+            <p>Es una biblioteca JavaScript que transforma el contenido de la página, haciendo que esta se vea como un libro o revista real utilizando todas las ventajas de HTML5.</p>
+            <!-- Intenté aplicar la librería de turn.js, pero no me funcionó. Supongo que no funciona porque está desactualizada, ya que lleva más de 10 años sin actualizaciones y no hay un tutorial reciente que explique cómo aplicar esta librería -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 content">
+            <h3 id="animate">Animate Style CSS</h3>
+            <p>Animate.css es una biblioteca de animaciones que permite darle vida o movimiento a los elementos dentro
+                de la página web. Estas amimaciones son super prácticas para hacer énfasis, es decir, que, al detectar
+                el
+                movimiento, el usuario dirija su atención al elemento que se está resaltando.</p>
+            <p>En esta página web, las imágenes y algunos títulos saltan o aparecen de los lados para demostrar el
+                funcionamiento de la librería.</p>
+        </div>
+        <div class="col-md-6 img">
+            <img src="img/undraw_animating_re_5gvn.svg" alt="Simulación de animaciones" width="400"
+                class="wow animate__animated animate__bounceInRight  animate__delay-1s">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 img">
+            <img src="img/undraw_export_files_re_99ar.svg" alt="Scroll a la pantalla" height="400"
+                class="wow animate__animated animate__bounceInLeft  animate__delay-1s">
+        </div>
+        <div class="col-md-6 content">
+            <h3 id="wow">Wow JS</h3>
+            <p>Wow.js es otra librería de JavaScript que se complementa con animate.css para que las animaciones vayan
+                apareciendo a medida que el usuario hace scroll a la pantalla, es decir, se desliza hacia abajo.</p>
+            <p>En resumen, lo que hace wow.js es detectar una acción o evento y, cuando la detecta, aplica las
+                animaciones CSS.</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

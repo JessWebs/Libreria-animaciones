@@ -1,0 +1,80 @@
+nav {
+    background-color: whitesmoke;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: large;
+    text-transform: uppercase;
+    border-radius: 30px;
+    margin: 0 15px;
+}
+
+.nav-link:hover {
+    background: #24C6DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #514A9D, #24C6DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #24C6DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #514A9D, #24C6DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.front img {
+    width: 80%;
+    height: calc(100vh - 90px);
+    padding: 10px;
+}
+
+.row {
+    margin: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-link:hover {
+        background: none;
+        color: #000;
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .front {
+        background: #5C258D;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4389A2, #5C258D);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4389A2, #5C258D);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .img img {
+        width: 80%;
+        height: 80%;
+    }
+}
